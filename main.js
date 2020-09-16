@@ -49,9 +49,9 @@ let users = [
 
 let result = users2.map((person) => {
     person.name = person.likes
-    person['age'] = person.likes.length
+    person['age'] = person.likes.length * 10
     delete person.likes
     return person   
-}, {})
+})
 
 console.log(result)
